@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MOVIES</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="top">
+      <header>
+        <a href="#" class="logo">JOAQUIN PHEONIX</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="index.html" style="--i: 1">Home</a></li>
+          <li><a href="movies.html" style="--i: 2">Movies</a></li>
+          <li><a href="life.html" style="--i: 3">Life</a></li>
+          <li><a href="achievements.html" style="--i: 4">Achievements</a></li>
+        </ul>
+      </header>
+      <header2>
+        <ul class="navigation2 flex4">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="life.html">Life</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+      </header2>
+    </section>
+
+    <section class="cover3">
+      <div class="coverwords">
+        <h1 class="run">"RUN TO</h1>
+        <h1 class="rescue">THE RESCUE</h1>
+        <h1 class="with">WITH</h1>
+        <h1 class="love">LOVE AND</h1>
+        <h1 class="peace">PEACE</h1>
+        <h1 class="follow">WILL FOLLOW"</h1>
+      </div>
+    </section>
+
+    <script>
+      let imgBx = document.querySelectorAll(".imgBx");
+      imgBx.forEach((popup) =>
+        popup.addEventListener("click", () => {
+          popup.classList.toggle("active");
+        })
+      );
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+
+    <!-- Swiper -->
+    <section class="lion">
+      <div class="swiper-container mySwiper">
+        <div class="movies">
+          <h1>MOVIES</h1>
+          <h2>Click to view Trailer</h2>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              href="https://www.youtube.com/watch?v=zAGVQLHvwOY"
+              target="_blank"
+            >
+              <img src="images/joker3.jpg"
+            /></a>
+            >
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://www.youtube.com/watch?v=dJTU48_yghs"
+              target="_blank"
+              ><img src="images/her.jpg"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://www.youtube.com/watch?v=6-oNSs_XMxI"
+              target="_blank"
+            >
+              <img src="images/walk the line3.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://www.youtube.com/watch?v=uBn5dURHsUg"
+              target="_blank"
+            >
+              <img src="images/the-master-1.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=d385fB-94aU">
+              <img src="images/mary.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=hP8mPkyBntw ">
+              <img src="images/irrational.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=2BwxeOzSx8A">
+              <img src="images/worry.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=oGqiV4DmqTc">
+              <img src="images/still.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=3OwvqKwTKmE">
+              <img src="images/sister.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=R8oYYg75Qvg"
+              ><img src="images/images.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=7MsJYEIiIfs">
+              <img src="images/immigrant.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=vCXVToxZNB4">
+              <img src="images/night.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/watch?v=owK1qxDselE">
+              <img src="images/gladiator.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+      });
+    </script>
+
+    <section class="footer">
+      <div class="foot grid8">
+        <div class="social">
+          <a href="https://mail.google.com/mail/u/1/?" target="_blank">
+            <img src="images/google.png" alt=""
+          /></a>
+          <a
+            href="https://www.instagram.com/aravindh_krishna_01/"
+            target="_blank"
+          >
+            <img src="images/insta.png" alt=""
+          /></a>
+          <a href="https://github.com/Aravindh06" target="_blank">
+            <img src="images/github.png" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/aravindh.krishna.581/"
+            target="_blank"
+          >
+            <img src="images/facebook.png" alt=""
+          /></a>
+        </div>
+
+        <div class="copyright flex3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html" style="--i: 2">Movies</a></li>
+          <li><a href="life.html" style="--i: 3">Life</a></li>
+          <li><a href="achievements.html" style="--i: 4">Achievements</a></li>
+        </div>
+
+        <div class="made">
+          <h2>Created by .</h2>
+          <h1>T.ARAVINDH KRISHNA</h1>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ACHIEVEMENTS</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="top">
+      <header>
+        <a href="#" class="logo">JOAQUIN PHEONIX</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="index.html" style="--i: 1">Home</a></li>
+          <li><a href="movies.html" style="--i: 2">Movies</a></li>
+          <li><a href="life.html" style="--i: 3">Life</a></li>
+          <li><a href="achievements.html" style="--i: 4">Achievements</a></li>
+        </ul>
+      </header>
+      <header2>
+        <ul class="navigation2 flex4">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="life.html">Life</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+      </header2>
+    </section>
+
+    <script>
+      let imgBx = document.querySelectorAll(".imgBx");
+      imgBx.forEach((popup) =>
+        popup.addEventListener("click", () => {
+          popup.classList.toggle("active");
+        })
+      );
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+
+    <section class="bg2">
+      <div class="chance">
+        <h1>
+          " I have been a scoundrel all my life, I've been selfish. I've been
+          cruel at times, hard to work with, and I'm grateful that so many of
+          you have given me a second chance. I think that's when we're at our
+          best: when we support each other "
+        </h1>
+      </div>
+    </section>
+
+    <script src="scroll-out.js"></script>
+    <script type="text/javascript">
+      ScrollOut({
+        targets: "h1",
+      });
+    </script>
+
+    <section class="rabbit">
+      <section class="awards">
+        <div class="awardlist">
+          <h2>AWARDS</h2>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="ImgBox">
+              <img src="images/globe.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>Golden Globe Award for Best Actor</h1>
+              <h1>2020</h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="ImgBox">
+              <img src="images/oscar.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>Academy Award OSCAR</h1>
+              <h1>2020</h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="ImgBox">
+              <img src="images/people.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>People's Choice Award for Favorite Leading Man</h1>
+              <h1>2008</h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="ImgBox">
+              <img src="images/BAFTA.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>BAFTA Award for Best Actor in a Leading Role</h1>
+              <h1>2020</h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="ImgBox">
+              <img src="images/spain.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>Critics' Choice Movie Award for Best Supporting Actor</h1>
+              <h1>2001</h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="ImgBox cycle">
+              <img src="images/guild3.png" alt="" />
+            </div>
+            <div class="content">
+              <h1>Guild Award for Best Actor in a Leading Role</h1>
+              <h1>2020</h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="ImgBox">
+              <img src="images/golden.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>Golden Globe Award for Best Actor</h1>
+              <h1>2006</h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="ImgBox">
+              <img src="images/cannes.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>Cannes Best Actor Award</h1>
+              <h1>2017</h1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="ImgBox">
+              <img src="images/critics.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>Critics' Choice Movie Award for Best Actor</h1>
+              <h1>2020</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="video">
+      <div class="vhead">
+        <h1>THE SPEECH AT OSCARS</h1>
+      </div>
+      <div class="video-wrapper">
+        <iframe
+          width="560"
+          height="315"
+          autoplay
+          src="https://www.youtube-nocookie.com/embed/LUllIT8rCj4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+      <div class="foot grid8">
+        <div class="social">
+          <a href="https://mail.google.com/mail/u/1/?" target="_blank">
+            <img src="images/google.png" alt=""
+          /></a>
+          <a
+            href="https://www.instagram.com/aravindh_krishna_01/"
+            target="_blank"
+          >
+            <img src="images/insta.png" alt=""
+          /></a>
+          <a href="https://github.com/Aravindh06" target="_blank">
+            <img src="images/github.png" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/aravindh.krishna.581/"
+            target="_blank"
+          >
+            <img src="images/facebook.png" alt=""
+          /></a>
+        </div>
+
+        <div class="copyright flex3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html" style="--i: 2">Movies</a></li>
+          <li><a href="life.html" style="--i: 3">Life</a></li>
+          <li><a href="achievements.html" style="--i: 4">Achievements</a></li>
+        </div>
+
+        <div class="made">
+          <h2>Created by .</h2>
+          <h1>T.ARAVINDH KRISHNA</h1>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
