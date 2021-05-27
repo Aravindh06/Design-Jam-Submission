@@ -401,3 +401,7 @@ body {
 .it {
   visibility: hidden;
 }
+
+.active-nav-link {
+  border-bottom: 3px solid #f9f6f7;
+}

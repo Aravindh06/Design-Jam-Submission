@@ -669,12 +669,17 @@ h2 {
     min-height: 230px;
   }
 
-  .grid,
-  .grid7,
-  .grid8,
+  .grid {
+    grid-template-columns: repeat(1fr, 1fr);
+  }
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1fr, 1fr);
+  }
+  .grid8 {
+    grid-template-columns: repeat(1fr, 1fr);
+  }
+  .grid7 {
+    grid-template-columns: repeat(1fr, 1fr);
   }
   .made {
     margin-top: 20px;
@@ -704,7 +709,6 @@ h2 {
     margin-right: 40px;
   }
 }
-
 @media (max-width: 550px) {
   .main {
     max-height: 300px;
@@ -776,26 +780,5 @@ h2 {
   .tiger {
     min-height: 300px;
     padding-bottom: 2rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .tiger {
-    min-height: 3500px;
-    padding-bottom: 7rem;
-  }
-  .main2 {
-    min-height: 2000px;
-  }
-  .dono {
-    height: 5000px;
-  }
-  .american {
-    padding-top: 103px;
-    padding-bottom: 75px;
-  }
-  .partner2 {
-    padding-top: 65px;
-    padding-bottom: 90px;
   }
 }
